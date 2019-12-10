@@ -1,0 +1,18 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="cars" class="homework1.Car">
+
+	</bean>
+
+
+	<bean id="drvr" class="homework1.Driver">
+
+		<property name="cr" ref="cars">
+		</property>
+
+	</bean>
+
+</beans>
